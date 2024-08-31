@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile</title>
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+    <div class="mobile" id="body">
+        <div class="camera">
+            <div class="camera1"></div>
+        </div>
+        <div class="innerframe">
+            <div>
+                <img src="wallpaper.jpg" alt="nothing" class="wallpaper" id="appimage">
+                <nav class="timenetwork">
+                    <h5 class="time">11:11:00</h5>
+                    <h5>4G<img src="https://img.icons8.com/?size=100&id=eEeptQjJVWkV&format=png&color=000000" alt="no signal" class="signal">29%</h5>
+                </nav> 
+                <div class="appscontrol">
+                    <nav class="apps" id="Apps">
+                        <button class="appbutton" onclick="phone()"></button>
+                        <button class="appbutton" onclick="settings()"></button>
+                        <button class="appbutton" onclick="whatsapp()"></button>
+                        <button class="appbutton" onclick="gallery()"></button>
+                        <button class="appbutton" onclick="camera()"></button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <nav class="buttons">
+                <button class="controlbuttons" onclick="gohome()"><h2>&lt;</h2></button>
+                <button class="controlbuttons" onclick="gohome()"><h2>&#9711;</h2></button>
+                <button class="controlbuttons" onclick="nothing()"><h2>&#9634;</h2></button>
+            </nav>
+        </div>
+        
+    </div>
+
+
+    <script>
+        var App_image = document.getElementById("appimage")
+        var apps = document.getElementById("Apps")
+        var body = document.getElementById("body")
+
+        // for apps 
+        function phone(){
+            App_image.src = "phone.jpg"
+            apps.innerHTML = ""
+        }
+
+        function settings(){
+            App_image.src = "settings.jpg"
+            apps.innerHTML = ""
+        }
+
+        function whatsapp(){
+            App_image.src = "whatsapp.jpg"
+            apps.innerHTML = ""
+        }
+
+        function gallery(){
+            App_image.src = "gallery.jpg"
+            apps.innerHTML = ""
+        }
+
+        function camera(){
+            App_image.src = "camera.jpg"
+            apps.innerHTML = ""
+        }
+        // for control button :
+        function gohome(){
+            location.reload()
+        }
+        function nothing(){
+            var time = 5
+            var a = document.createElement("h1")
+            body.innerHTML = a.textContent = "Error accuried !!  waitfor " +  time + " seconds"
+            setTimeout(function(){
+                location.reload()
+            },5000)
+        }
+    </script>
+</body>
+</html>

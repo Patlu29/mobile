@@ -1,0 +1,97 @@
+.mobile{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid black;
+    width: 350px;
+    height: 600px;
+    border-radius: 20px;
+}
+.camera{
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    background-color: black;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+}
+.camera1{
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+}
+.innerframe{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid black;
+    width: 80%;
+    height: 85%;
+    border-radius: 16px;
+    margin-top: -3%;
+}
+.controls{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.buttons{
+    display: flex;
+    gap: 80px;
+}
+.controlbuttons{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.signal{
+    width: 15px;
+}
+.timenetwork{
+    color: whitesmoke;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    gap: 150px;
+    margin-left: 10px;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.wallpaper{
+    width: 280px;
+    height: 510px;
+    border-radius: 16px;
+    filter: brightness(1);
+}
+.apps{
+    display: flex;
+    gap: 23px;
+    margin-left: 20px;
+}
+.appscontrol{
+    position: absolute;
+    bottom: 30px;
+}
+.appbutton{
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.appbutton2{
+    display: none;
+}
